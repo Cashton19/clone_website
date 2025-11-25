@@ -1,0 +1,1 @@
+start by assign h tags global media-quries 

@@ -1,0 +1,109 @@
+@layer fonts {
+  /* open-sans-regular - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/open-sans-v44-latin-regular.woff2") format("woff2");
+  }
+
+  /* raleway-regular - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/raleway-v37-latin-regular.woff2") format("woff2");
+  }
+
+  /* poppins-regular - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/poppins-v24-latin-regular.woff2") format("woff2");
+  }
+
+  /* custom font sizes */
+  :root {
+    --fs-12: calc(12 / 16 * 1rem);
+    --fs-13: calc(13 / 16 * 1rem);
+    --fs-14: calc(14 / 16 * 1rem);
+    --fs-15: calc(15 / 16 * 1rem);
+    --fs-17: calc(17 / 16 * 1rem);
+    --fs-18: calc(18 / 16 * 1rem);
+    --fs-20: calc(20 / 16 * 1rem);
+    --fs-24: calc(24 / 16 * 1rem);
+    --fs-26: calc(26 / 16 * 1rem);
+    --fs-28: calc(28 / 16 * 1rem);
+    --fs-30: calc(30 / 16 * 1rem);
+    --fs-32: calc(32 / 16 * 1rem);
+    --fs-34: calc(34 / 16 * 1rem);
+    --fs-36: calc(36 / 16 * 1rem);
+    --fs-38: calc(38 / 16 * 1rem);
+    --fs-48: calc(48 / 16 * 1rem);
+  }
+}
+
+@layer colors {
+  :root {
+    --background-color: hsl(0, 0%, 100%);
+    --default-color: hsl(0, 0%, 27%);
+    --heading-color: hsl(142, 9%, 24%);
+    --accent-color: hsl(138, 54%, 59%);
+    --surface-color: hsl(0, 0%, 100%);
+    --contrast-color: hsl(0, 0%, 100%);
+    /* Nav-menu Colors */
+    --nav-color: hsl(180, 1%, 15%);
+    --nav-hover-color: hsl(138, 54%, 59%);
+    --nav-dropdown-background-color: hsl(0, 0%, 100%);
+    --nav-dropdown-color: hsl(180, 1%, 15%);
+    --nav-dropdown-hover-color: hsl(138, 54%, 59%);
+  }
+}
+
+@layer global {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  header ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
