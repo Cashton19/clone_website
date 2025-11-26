@@ -1,1 +1,1 @@
-start by assign h tags global media-quries 
+start by assign fonts size to tabs and laptops
