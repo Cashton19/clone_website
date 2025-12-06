@@ -32,6 +32,7 @@
   a {
     text-decoration: none;
     transition: 0.3s;
+    color: inherit;
   }
 
   header ul {
@@ -94,6 +95,7 @@
     --fs-13: calc(13 / 16 * 1rem);
     --fs-14: calc(14 / 16 * 1rem);
     --fs-15: calc(15 / 16 * 1rem);
+    --fs-16: calc(16 / 16 * 1rem); /*default size*/
     --fs-17: calc(17 / 16 * 1rem);
     --fs-18: calc(18 / 16 * 1rem);
     --fs-20: calc(20 / 16 * 1rem);
@@ -108,128 +110,169 @@
     --fs-48: calc(48 / 16 * 1rem);
   }
 
-  /* Default Font-sizes Configurations i.e Phone screens (425 pixels) */
-  header .sitename h1 {
-    font-size: var(--fs-30);
-  }
+  @layer font_configurations {
+    @layer mobile_config {
+      /* Default Font-sizes Configurations i.e Phone screens (425 pixels) and also Tab Uses Same Configs*/
 
-  header a {
-    font-size: var(--fs-14);
-  }
+      /* Header */
 
-  header nav a {
-    font-size: var(--fs-17);
-  }
+      header .sitename h1 {
+        font-size: var(--fs-30);
+      }
 
-  .hero h2 {
-    font-size: var(--fs-32);
-  }
+      header a {
+        font-size: var(--fs-14);
+      }
 
-  .hero p {
-    font-size: var(--fs-18);
-  }
+      header nav a {
+        font-size: var(--fs-17);
+      }
 
-  .hero a {
-    font-size: var(--fs-15);
-  }
+      /* hero section */
 
-  .section__about h3 {
-    font-size: var(--fs-32);
-  }
+      .hero h2 {
+        font-size: var(--fs-32);
+      }
 
-  /* .section__about p,
+      .hero p {
+        font-size: var(--fs-18);
+      }
+
+      .hero a {
+        font-size: var(--fs-15);
+      }
+
+      /* About Section */
+
+      .section__about h3 {
+        font-size: var(--fs-32);
+      }
+
+      /* .section__about p,
   .section__about li {
     font-size: var(--default size. i.e 16);
   } */
 
-  .section__about span {
-    font-size: var(--fs-15);
-  }
+      .section__about span {
+        font-size: var(--fs-15);
+      }
 
-  .counter span {
-    font-size: var(--fs-48);
-  }
+      /* Counter */
 
-  .counter p {
-    font-size: var(--fs-15);
-  }
+      .counter span {
+        font-size: var(--fs-48);
+      }
 
-  .section__whyUs h3 {
-    font-size: var(--fs-34);
-  }
+      .counter p {
+        font-size: var(--fs-15);
+      }
 
-  /* .section__whyUs .why-box p,
+      /* WhyUs Section */
+
+      .section__whyUs h3 {
+        font-size: var(--fs-34);
+      }
+
+      /* .section__whyUs .why-box p,
   .section__whyUs .why-box span {
     font-size: var(--default size. i.e 16);
   } */
 
-  .section__whyUs .benefit-box h4 {
-    font-size: var(--fs-20);
-  }
+      .section__whyUs .benefit-box h4 {
+        font-size: var(--fs-20);
+      }
 
-  .section__whyUs .benefit-box p {
-    font-size: var(--fs-15);
-  }
+      .section__whyUs .benefit-box p {
+        font-size: var(--fs-15);
+      }
 
-  /* .section__whyUs .feature-box a {
+      /* .section__whyUs .feature-boxes a {
     font-size: var(--default size. i.e 16);
 } */
 
-  .section__courses h2 {
-    font-size: var(--fs-14);
-  }
+      /* Courses Section */
 
-  .section__courses p {
-    font-size: var(--fs-36);
-  }
+      .section__courses h2 {
+        font-size: var(--fs-14);
+      }
 
-  .section__courses .course-item p {
-    font-size: var(--fs-14);
-  }
+      .section__courses p {
+        font-size: var(--fs-36);
+      }
 
-  .section__courses .course-item .price p {
-    font-size: var(--fs-18);
-  }
+      .section__courses .course-item p {
+        font-size: var(--fs-14);
+      }
 
-  .section__courses h2 {
-    font-size: var(--fs-20);
-  }
+      .section__courses .course-item .price p {
+        font-size: var(--fs-18);
+      }
 
-  /* .section__courses a{
+      .section__courses h3 {
+        font-size: var(--fs-20);
+      }
+
+      /* .section__courses a{
     font-size: var(--default size. i.e 16);
   } */
 
-  .section__trainers h4 {
-    font-size: var(--fs-18);
-  }
+      /* Trainers Section */
 
-  .section__trainers span {
-    font-size: var(--fs-13);
-  }
+      .section__trainers h4 {
+        font-size: var(--fs-18);
+      }
 
-  .section__trainers p {
-    font-size: var(--fs-14);
-  }
+      .section__trainers span {
+        font-size: var(--fs-13);
+      }
 
-  footer .sitename span {
-    font-size: var(--fs-26);
-  }
+      .section__trainers p {
+        font-size: var(--fs-14);
+      }
 
-  footer p,
-  footer a {
-    font-size: var(--fs-14);
-  }
+      /* Footer */
 
-  /* footer h4{
+      footer .sitename span {
+        font-size: var(--fs-26);
+      }
+
+      footer p,
+      footer a {
+        font-size: var(--fs-14);
+      }
+
+      /* footer h4{
     font-size: var(--default size. i.e 16);
   }
  */
 
-  /* footer button{
+      /* footer button{
   font-size: var(--default size. i.e 16);
  } */
 
-  footer .credits {
-    font-size: var(--fs-13);
+      footer .credits div {
+        font-size: var(--fs-13);
+      }
+    }
+
+    @media (width >= calc(1024 / 16 * 1rem)) {
+      /* font config for laptops that is 1024px (Only the hero Secrion seem to have Changes) */
+      /* hero section */
+
+      .hero h2 {
+        font-size: var(--fs-48); /*changed*/
+      }
+
+      .hero p {
+        font-size: var(--fs-24); /*changed*/
+      }
+    }
+
+    @media (width >= calc(1140 / 16 * 1rem)) {
+      /* font config for big screen laptops/monitors that is 1440px onwards (only navbar links have changes) */
+      header nav a {
+        font-size: var(--fs-16); /*changed*/
+      }
+    }
   }
 }
