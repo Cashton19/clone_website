@@ -9,43 +9,67 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/globals.css" />
     <title>Mentor</title>
   </head>
 
   <body>
-    <header>
-      <h1 class="sitename">MENTOR</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Courses</a></li>
-          <li><a href="#">Trainers</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li>
-            Dropdown
-            <ul>
-              <li><a href="#"> Dropdown 1</a></li>
-              <li>
-                Deep Dropdown
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#"> Deep Dropdown 3</a></li>
-                  <li><a href="#"> Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#">Get Started</a>
+    <header class="header">
+      <div class="header-content">
+        <h1 class="sitename">MENTOR</h1>
+        <a href="#">Get Started</a>
+        <nav class="nav-bar">
+          <ul class="nav-bar__items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li>
+              <span class="nav-bar__dropdown--carat"
+                >Dropdown <img src="/assets/img/carat_icon.svg" alt="carot svg"
+              /></span>
+              <ul class="nav-bar__dropdown">
+                <li><a href="#"> Dropdown 1</a></li>
+                <li>
+                  <span class="nav-bar__dropdown--carat"
+                    >Deep Dropdown<img
+                      src="/assets/img/carat_icon.svg"
+                      alt="carot svg"
+                  /></span>
+                  <ul class="nav-bar__deep-dropdown">
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#"> Deep Dropdown 3</a></li>
+                    <li><a href="#"> Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger-menu">
+          <img
+            src="/assets/img/hamburger-menu.svg"
+            alt="hamburger-menu-icon"
+            height="38"
+            width="28"
+          />
+          <img
+            src="/assets/img/hamburger-close.svg"
+            alt="hamburger-close-icon"
+            height="38"
+            width="50"
+          />
+        </div>
+        <div class="nav-bar__overlay"></div>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -329,5 +353,6 @@
         <div><p>Designed by BootstrapMade</p></div>
       </div>
     </footer>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

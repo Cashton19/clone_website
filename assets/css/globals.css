@@ -1,0 +1,287 @@
+/* This Design is Based on Mobile-first Strategy */
+@layer global {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: inherit;
+  }
+
+  header ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+@layer colors {
+  :root {
+    --background-color: hsl(0, 0%, 100%);
+    --default-color: hsl(0, 0%, 27%);
+    --heading-color: hsl(142, 71%, 47%);
+    --accent-color: hsl(138, 54%, 59%);
+    --surface-color: hsl(0, 0%, 100%);
+    --contrast-color: hsl(0, 0%, 100%);
+    /* Nav-menu Colors */
+    --nav-color: hsl(180, 1%, 15%);
+    --nav-hover-color: hsl(138, 54%, 59%);
+    --nav-dropdown-background-color: hsl(0, 0%, 100%);
+    --nav-dropdown-color: hsl(180, 1%, 15%);
+    --nav-dropdown-hover-color: hsl(138, 54%, 59%);
+  }
+}
+
+@layer fonts {
+  /* open-sans-regular - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/open-sans-v44-latin-regular.woff2") format("woff2");
+  }
+
+  /* raleway-regular - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/raleway-v37-latin-regular.woff2") format("woff2");
+  }
+
+  /* raleway-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/raleway-v37-latin-700.woff2") format("woff2");
+  }
+
+  /* poppins-regular - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/poppins-v24-latin-regular.woff2") format("woff2");
+  }
+
+  /* custom font sizes */
+  :root {
+    --fs-12: calc(12 / 16 * 1rem);
+    --fs-13: calc(13 / 16 * 1rem);
+    --fs-14: calc(14 / 16 * 1rem);
+    --fs-15: calc(15 / 16 * 1rem);
+    --fs-16: calc(16 / 16 * 1rem); /*default size*/
+    --fs-17: calc(17 / 16 * 1rem);
+    --fs-18: calc(18 / 16 * 1rem);
+    --fs-20: calc(20 / 16 * 1rem);
+    --fs-24: calc(24 / 16 * 1rem);
+    --fs-26: calc(26 / 16 * 1rem);
+    --fs-28: calc(28 / 16 * 1rem);
+    --fs-30: calc(30 / 16 * 1rem);
+    --fs-32: calc(32 / 16 * 1rem);
+    --fs-34: calc(34 / 16 * 1rem);
+    --fs-36: calc(36 / 16 * 1rem);
+    --fs-38: calc(38 / 16 * 1rem);
+    --fs-48: calc(48 / 16 * 1rem);
+  }
+
+  @layer font_configurations {
+    @layer mobile_config {
+      /* Default Font-sizes Configurations i.e Phone screens (till 425 pixels) and also Tab Uses Same Configs*/
+
+      /* Header */
+
+      header .sitename h1 {
+        font-size: var(--fs-30);
+      }
+
+      header a {
+        font-size: var(--fs-14);
+      }
+
+      header nav a {
+        font-size: var(--fs-17);
+      }
+
+      /* hero section */
+
+      .hero h2 {
+        font-size: var(--fs-32);
+      }
+
+      .hero p {
+        font-size: var(--fs-18);
+      }
+
+      .hero a {
+        font-size: var(--fs-15);
+      }
+
+      /* About Section */
+
+      .section__about h3 {
+        font-size: var(--fs-32);
+      }
+
+      /* .section__about p,
+  .section__about li {
+    font-size: var(--default size. i.e 16);
+  } */
+
+      .section__about span {
+        font-size: var(--fs-15);
+      }
+
+      /* Counter */
+
+      .counter span {
+        font-size: var(--fs-48);
+      }
+
+      .counter p {
+        font-size: var(--fs-15);
+      }
+
+      /* WhyUs Section */
+
+      .section__whyUs h3 {
+        font-size: var(--fs-34);
+      }
+
+      /* .section__whyUs .why-box p,
+  .section__whyUs .why-box span {
+    font-size: var(--default size. i.e 16);
+  } */
+
+      .section__whyUs .benefit-box h4 {
+        font-size: var(--fs-20);
+      }
+
+      .section__whyUs .benefit-box p {
+        font-size: var(--fs-15);
+      }
+
+      /* .section__whyUs .feature-boxes a {
+    font-size: var(--default size. i.e 16);
+} */
+
+      /* Courses Section */
+
+      .section__courses h2 {
+        font-size: var(--fs-14);
+      }
+
+      .section__courses p {
+        font-size: var(--fs-36);
+      }
+
+      .section__courses .course-item p {
+        font-size: var(--fs-14);
+      }
+
+      .section__courses .course-item .price p {
+        font-size: var(--fs-18);
+      }
+
+      .section__courses h3 {
+        font-size: var(--fs-20);
+      }
+
+      /* .section__courses a{
+    font-size: var(--default size. i.e 16);
+  } */
+
+      /* Trainers Section */
+
+      .section__trainers h4 {
+        font-size: var(--fs-18);
+      }
+
+      .section__trainers span {
+        font-size: var(--fs-13);
+      }
+
+      .section__trainers p {
+        font-size: var(--fs-14);
+      }
+
+      /* Footer */
+
+      footer .sitename span {
+        font-size: var(--fs-26);
+      }
+
+      footer p,
+      footer a {
+        font-size: var(--fs-14);
+      }
+
+      /* footer h4{
+    font-size: var(--default size. i.e 16);
+  }
+ */
+
+      /* footer button{
+  font-size: var(--default size. i.e 16);
+ } */
+
+      footer .credits div {
+        font-size: var(--fs-13);
+      }
+    }
+
+    @media (width >= calc(1024 / 16 * 1rem)) {
+      /* font config for laptops that is 1024px (Only the hero Secrion seem to have Changes) */
+      /* hero section */
+
+      .hero h2 {
+        font-size: var(--fs-48); /*changed*/
+      }
+
+      .hero p {
+        font-size: var(--fs-24); /*changed*/
+      }
+    }
+
+    @media (width >= calc(1140 / 16 * 1rem)) {
+      /* font config for big screen laptops/monitors that is 1440px onwards (only navbar links have changes) */
+      header nav a {
+        font-size: var(--fs-16); /*changed*/
+      }
+    }
+  }
+}
