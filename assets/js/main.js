@@ -13,22 +13,63 @@ function hamburger() {
     ".nav-bar__dropdown--carat"
   )[1];
   const deepDropDownList = document.querySelector(".nav-bar__deep-dropdown");
+  const mediaQuery = window.matchMedia("(max-width: 1023px)");
 
-  hamburgerMenu.addEventListener("click", () => {
+  function hamburgerToggle() {
     navBar.classList.toggle("active");
     overlay.classList.toggle("active");
     closeBtn.classList.toggle("active");
     hamburgerMenu.classList.toggle("active");
-  });
+  }
 
-  dropDown.addEventListener("click", (e) => {
+  function dropDownToggle() {
     dropDownList.classList.toggle("active");
     dropDown.classList.toggle("active"); // i'm using this for carrat rotation not selecting the entire dropdown.. so don't get confused
-  });
+  }
 
-  deepDropDown.addEventListener("click", (e) => {
+  function deepDropDownToggle() {
     deepDropDownList.classList.toggle("active");
     deepDropDown.classList.toggle("active");
+  }
+
+  let active = false;
+
+  function enable() {
+    if (active) return;
+    hamburgerMenu.addEventListener("click", hamburgerToggle);
+    dropDown.addEventListener("click", dropDownToggle);
+    deepDropDown.addEventListener("click", deepDropDownToggle);
+    active = true;
+  }
+
+  function disable() {
+    if (!active) return;
+    hamburgerMenu.removeEventListener("click", hamburgerToggle);
+    dropDown.removeEventListener("click", dropDownToggle);
+    deepDropDown.removeEventListener("click", deepDropDownToggle);
+    active = false;
+  }
+
+  mediaQuery.addEventListener("change", (e) => {
+    if (e.matches) enable();
+    else disable();
   });
+
+  if (mediaQuery.matches) enable();
 }
+
 hamburger();
+
+/* ==================================================
+                Header scroll logic
+================================================== */
+
+const pageHeader = document.querySelector(".header");
+
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY > 0) {
+    pageHeader.classList.add("scrolled");
+  } else {
+    pageHeader.classList.remove("scrolled");
+  }
+});

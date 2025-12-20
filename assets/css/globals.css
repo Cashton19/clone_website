@@ -276,12 +276,5 @@
         font-size: var(--fs-24); /*changed*/
       }
     }
-
-    @media (width >= calc(1140 / 16 * 1rem)) {
-      /* font config for big screen laptops/monitors that is 1440px onwards (only navbar links have changes) */
-      header nav a {
-        font-size: var(--fs-16); /*changed*/
-      }
-    }
   }
 }
