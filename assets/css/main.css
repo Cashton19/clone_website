@@ -346,3 +346,95 @@
     margin-top: calc(65.2 / 16 * 1rem);
   }
 }
+
+/* ==================================================
+                  About Section
+================================================== */
+/* for phone screens and tabs */
+.section__about {
+  padding-block: calc(60 / 16 * 1rem);
+  padding-inline: calc(12 / 16 * 1rem);
+  .about__container {
+    max-width: 90vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      padding-inline: calc(12 / 16 * 1rem);
+    }
+    .about__content {
+      margin-top: calc(24 / 16 * 1rem);
+      > span {
+        background: var(--accent-color);
+        color: var(--contrast-color);
+        letter-spacing: 1px;
+        padding: 10px 24px 12px 24px;
+        border-radius: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          display: inline-block;
+          transform: translateY(1px);
+        }
+        i::after {
+          content: "";
+          background-color: var(--contrast-color);
+          mask: url("/assets/img/arrow.svg") no-repeat center / contain;
+          padding: calc(8 / 16 * 1rem);
+          margin-left: 8px;
+        }
+      }
+    }
+    h3 {
+      color: hsl(180, 1%, 15%);
+    }
+
+    p {
+      color: var(--default-color);
+      line-height: 24px;
+    }
+
+    ul {
+      color: var(--default-color);
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding-bottom: 10px;
+      }
+      i::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-color: var(--accent-color);
+        mask: url("/assets/img/check.svg") no-repeat center / contain;
+        top: 0px;
+        left: -30px;
+        border-radius: 50%;
+        padding: calc(12 / 16 * 1rem);
+        margin-right: 4px;
+        border: 1px solid var(--accent-color);
+      }
+    }
+  }
+}
+/* for desktop screens */
+@media (width >= 1024px) {
+  .section__about {
+    display: grid;
+    place-items: center;
+  }
+  .section__about .about__container {
+    flex-direction: row;
+    img {
+      order: 2;
+      max-width: 50vw;
+    }
+    .about__content {
+      max-width: 45vw;
+    }
+  }
+}
