@@ -121,7 +121,7 @@
 
   @layer font_configurations {
     @layer mobile_config {
-      /* Default Font-sizes Configurations i.e Phone screens (till 425 pixels) and also Tab Uses Same Configs*/
+      /* Default Font-sizes Configurations i.e Phone screens (till 768 pixels)*/
 
       /* Header */
 
@@ -264,16 +264,17 @@
       }
     }
 
-    @media (width >= calc(1024 / 16 * 1rem)) {
-      /* font config for laptops that is 1024px (Only the hero Secrion seem to have Changes) */
-      /* hero section */
+    @layer tabletAndAbove_configs {
+      @media (width >= 768px) {
+        /* font config for tabs and above (Only the hero Secrion seem to have Changes) */
+        /* hero section */
 
-      .hero h2 {
-        font-size: var(--fs-48); /*changed*/
-      }
-
-      .hero p {
-        font-size: var(--fs-24); /*changed*/
+        .hero h2 {
+          font-size: var(--fs-48); /*changed*/
+        }
+        .hero p {
+          font-size: var(--fs-24); /*changed*/
+        }
       }
     }
   }
