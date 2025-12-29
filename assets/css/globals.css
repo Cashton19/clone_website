@@ -71,6 +71,15 @@
     src: url("/assets/fonts/open-sans-v44-latin-regular.woff2") format("woff2");
   }
 
+  /* open-sans-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/open-sans-v44-latin-700.woff2") format("woff2");
+  }
+
   /* raleway-regular - latin */
   @font-face {
     font-display: swap;
@@ -78,6 +87,15 @@
     font-style: normal;
     font-weight: 400;
     src: url("/assets/fonts/raleway-v37-latin-regular.woff2") format("woff2");
+  }
+
+  /* raleway-600 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/assets/fonts/raleway-v37-latin-600.woff2") format("woff2");
   }
 
   /* raleway-700 - latin */

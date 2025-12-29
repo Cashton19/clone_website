@@ -438,3 +438,46 @@
     }
   }
 }
+
+/* ==================================================
+                  Counter Section
+================================================== */
+.counter {
+  background-color: hsl(0, 0%, 98%);
+.counter__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  div {
+    padding: calc(30 / 16 * 1rem);
+
+    span {
+      color: var(--accent-color);
+      font-weight: 700;
+    }
+    p {
+      font-family: "Raleway", sans-serif;
+      text-align: center;
+      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      font-weight: 600;
+    }
+  }
+}
+/* for tab screens */
+@media (width >= 768px) {
+  .counter__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+
+/* for desktop screens */
+@media (width >= 1024px) {
+  .counter__content {
+    max-width: 1024px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: none;
+  }
+}
