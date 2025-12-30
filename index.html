@@ -596,81 +596,223 @@
         </div>
       </section>
       <section class="section__courses">
-        <h2>Courses</h2>
-        <p>Popular Courses</p>
-        <div class="course-item">
-          <img
-            src="/assets/img/course/course-1.webp"
-            alt="A computer"
-            width="800"
-            height="533"
-          />
-          <div class="price">
-            <p>Web Development</p>
-            <span>$169</span>
+        <div class="courses__container">
+          <div class="course-heading__wrapper">
+            <h2>Courses</h2>
+            <div></div>
+            <p>Popular Courses</p>
           </div>
-          <h3>Website Design</h3>
-          <p>
-            Et architecto provident deleniti facere repellat nobis iste. Id
-            facere quia quae dolores dolorem tempore.
-          </p>
-          <div class="courses__incharge">
-            <img
-              src="/assets/img/person/person-m-7.webp"
-              alt="Antonio"
-              width="1024"
-              height="1024"
-            /><span>Antonio</span><i>50</i><i>65</i>
-          </div>
-        </div>
-        <div class="course-item">
-          <img
-            src="/assets/img/course/course-2.webp"
-            alt="An Analytical Graph"
-            width="800"
-            height="533"
-          />
-          <div class="price">
-            <p>Marketing</p>
-            <span>$250</span>
-          </div>
-          <h3>Search Engine Optimization</h3>
-          <p>
-            Et architecto provident deleniti facere repellat nobis iste. Id
-            facere quia quae dolores dolorem tempore.
-          </p>
-          <div class="courses__incharge">
-            <img
-              src="/assets/img/person/person-f-14.webp"
-              alt="Lana"
-              width="1024"
-              height="1024"
-            /><span>Lana</span><i>35</i><i>42</i>
-          </div>
-        </div>
-        <div class="course-item">
-          <img
-            src="/assets/img/course/course-3.webp"
-            alt="A person typing on a laptop"
-            width="800"
-            height="533"
-          />
-          <div class="price">
-            <p>Content</p>
-            <span>$180</span>
-          </div>
-          <h3>Copywriting</h3>
-          <p>
-            Et architecto provident deleniti facere repellat nobis iste. Id
-            facere quia quae dolores dolorem tempore.
-          </p>
-          <div class="courses__incharge">
-            <img
-              src="/assets/img/person/person-m-12.webp"
-              alt="Brandon"
-              width="800"
-              height="533"
-            /><span>Brandon</span><i>20</i><i>85</i>
+          <div class="course-item__container">
+            <div class="course-item">
+              <img
+                src="/assets/img/course/course-1.webp"
+                alt="A computer"
+                width="800"
+                height="533"
+              />
+              <div class="price-card__container">
+                <div class="price">
+                  <p>Web Development</p>
+                  <span>$169</span>
+                </div>
+                <h3>Website Design</h3>
+                <p>
+                  Et architecto provident deleniti facere repellat nobis iste.
+                  Id facere quia quae dolores dolorem tempore.
+                </p>
+                <div class="grey-line"></div>
+                <div class="courses__incharge">
+                  <div class="incharge__wrapper">
+                    <img
+                      src="/assets/img/person/person-m-7.webp"
+                      alt="Antonio"
+                      width="1024"
+                      height="1024"
+                    /><span>Antonio</span>
+                  </div>
+                  <div>
+                    <div class="icon__wrapper">
+                      <svg
+                        width="22px"
+                        height="33px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 21C4 17.134 7.13401 14 11 14C11.3395 14 11.6734 14.0242 12 14.0709M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7ZM12.5898 21L14.6148 20.595C14.7914 20.5597 14.8797 20.542 14.962 20.5097C15.0351 20.4811 15.1045 20.4439 15.1689 20.399C15.2414 20.3484 15.3051 20.2848 15.4324 20.1574L19.5898 16C20.1421 15.4477 20.1421 14.5523 19.5898 14C19.0376 13.4477 18.1421 13.4477 17.5898 14L13.4324 18.1574C13.3051 18.2848 13.2414 18.3484 13.1908 18.421C13.1459 18.4853 13.1088 18.5548 13.0801 18.6279C13.0478 18.7102 13.0302 18.7985 12.9948 18.975L12.5898 21Z"
+                          stroke="#b4b4b4"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>50</span>
+                    </div>
+                    <div class="icon__wrapper">
+                      <svg
+                        width="22px"
+                        height="33px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                          stroke="#b4b4b4"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>65</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img
+                src="/assets/img/course/course-2.webp"
+                alt="An Analytical Graph"
+                width="800"
+                height="533"
+              />
+              <div class="price-card__container">
+                <div class="price">
+                  <p>Marketing</p>
+                  <span>$250</span>
+                </div>
+                <h3>Search Engine Optimization</h3>
+                <p>
+                  Et architecto provident deleniti facere repellat nobis iste.
+                  Id facere quia quae dolores dolorem tempore.
+                </p>
+                <div class="grey-line"></div>
+                <div class="courses__incharge">
+                  <div class="incharge__wrapper">
+                    <img
+                      src="/assets/img/person/person-f-14.webp"
+                      alt="Lana"
+                      width="1024"
+                      height="1024"
+                    /><span>Lana</span>
+                  </div>
+                  <div>
+                    <div class="icon__wrapper">
+                      <svg
+                        width="22px"
+                        height="33px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 21C4 17.134 7.13401 14 11 14C11.3395 14 11.6734 14.0242 12 14.0709M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7ZM12.5898 21L14.6148 20.595C14.7914 20.5597 14.8797 20.542 14.962 20.5097C15.0351 20.4811 15.1045 20.4439 15.1689 20.399C15.2414 20.3484 15.3051 20.2848 15.4324 20.1574L19.5898 16C20.1421 15.4477 20.1421 14.5523 19.5898 14C19.0376 13.4477 18.1421 13.4477 17.5898 14L13.4324 18.1574C13.3051 18.2848 13.2414 18.3484 13.1908 18.421C13.1459 18.4853 13.1088 18.5548 13.0801 18.6279C13.0478 18.7102 13.0302 18.7985 12.9948 18.975L12.5898 21Z"
+                          stroke="#b4b4b4"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>35</span>
+                    </div>
+                    <div class="icon__wrapper">
+                      <svg
+                        width="22px"
+                        height="33px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                          stroke="#b4b4b4"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>42</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course-item">
+              <img
+                src="/assets/img/course/course-3.webp"
+                alt="A person typing on a laptop"
+                width="800"
+                height="533"
+              />
+              <div class="price-card__container">
+                <div class="price">
+                  <p>Content</p>
+                  <span>$180</span>
+                </div>
+                <h3>Copywriting</h3>
+                <p>
+                  Et architecto provident deleniti facere repellat nobis iste.
+                  Id facere quia quae dolores dolorem tempore.
+                </p>
+                <div class="grey-line"></div>
+                <div class="courses__incharge">
+                  <div class="incharge__wrapper">
+                    <img
+                      src="/assets/img/person/person-m-12.webp"
+                      alt="Brandon"
+                      width="800"
+                      height="533"
+                    /><span>Brandon</span>
+                  </div>
+                  <div>
+                    <div class="icon__wrapper">
+                      <svg
+                        width="22px"
+                        height="33px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 21C4 17.134 7.13401 14 11 14C11.3395 14 11.6734 14.0242 12 14.0709M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7ZM12.5898 21L14.6148 20.595C14.7914 20.5597 14.8797 20.542 14.962 20.5097C15.0351 20.4811 15.1045 20.4439 15.1689 20.399C15.2414 20.3484 15.3051 20.2848 15.4324 20.1574L19.5898 16C20.1421 15.4477 20.1421 14.5523 19.5898 14C19.0376 13.4477 18.1421 13.4477 17.5898 14L13.4324 18.1574C13.3051 18.2848 13.2414 18.3484 13.1908 18.421C13.1459 18.4853 13.1088 18.5548 13.0801 18.6279C13.0478 18.7102 13.0302 18.7985 12.9948 18.975L12.5898 21Z"
+                          stroke="#b4b4b4"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>20</span>
+                    </div>
+                    <div class="icon__wrapper">
+                      <svg
+                        width="22px"
+                        height="33px"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z"
+                          stroke="#b4b4b4"
+                          stroke-width="1"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <span>85</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

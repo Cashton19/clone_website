@@ -560,11 +560,18 @@
       max-width: 90vw;
       margin: 0 auto;
       margin-top: 24px;
-
+      transition: all 0.2s;
       a {
         margin-left: 8px;
         font-weight: 700;
         color: var(--default-color);
+      }
+    }
+    .feature-box:hover {
+      border-color: var(--accent-color);
+      cursor: pointer;
+      a {
+        color: var(--accent-color);
       }
     }
   }
@@ -609,3 +616,144 @@
     }
   }
 }
+
+/* ==================================================
+                  Courses Section
+================================================== */
+.section__courses {
+  max-width: 1024px;
+  padding-block: 30px;
+  margin: 0 auto;
+  p {
+    margin: 0;
+  }
+}
+
+.courses__container {
+  padding-inline: 12px;
+  margin: 0 auto;
+}
+.course-heading__wrapper {
+  position: relative;
+  /* padding-inline: 12px; */
+  padding-bottom: calc(60 - 24px);
+}
+.course-heading__wrapper h2 {
+  letter-spacing: 1.5px;
+  line-height: 1px;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  text-transform: uppercase;
+}
+.course-heading__wrapper div {
+  position: absolute;
+  left: 80px;
+  width: 120px;
+  height: 1px;
+  background-color: var(--accent-color);
+}
+.course-heading__wrapper p {
+  color: var(--default-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 54px;
+}
+
+.course-item__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.course-item {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  max-width: 768px;
+}
+.course-item > img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.price-card__container {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 5px;
+  padding: 15px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.price p {
+  border-radius: 5px;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  padding: 6px 14px;
+}
+
+.price span {
+  /* margin-right: 8px; */
+  font-weight: 700;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.price-card__container h3 {
+  font-weight: 700;
+  color: var(--default-color);
+  margin-bottom: 8px;
+}
+.price-card__container > p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 16px;
+}
+.grey-line {
+  height: 1px;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  margin: 0 auto;
+}
+.courses__incharge {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.incharge__wrapper {
+  display: flex;
+  align-items: center;
+}
+.incharge__wrapper span {
+  margin-left: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-weight: 700;
+}
+.courses__incharge img {
+  width: 50px;
+  border-radius: 50%;
+}
+.courses__incharge > :last-child {
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width >= 1024px) {
+  .course-item {
+    width: 320px;
+  }
+}
+
+/* ==================================================
+                  trainers Section
+================================================== */

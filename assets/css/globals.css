@@ -232,6 +232,10 @@
       }
 
       .section__courses .course-item .price p {
+        font-size: var(--fs-14);
+      }
+
+      .price span{
         font-size: var(--fs-18);
       }
 
