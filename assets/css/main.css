@@ -444,6 +444,7 @@
 ================================================== */
 .counter {
   background-color: hsl(0, 0%, 98%);
+}
 .counter__content {
   display: grid;
   grid-template-columns: 1fr;
@@ -479,5 +480,132 @@
     max-width: 1024px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
+  }
+}
+/* ==================================================
+                  Whyus Section
+================================================== */
+
+.section__whyUs {
+  padding-block: calc(60 / 16 * 1rem);
+  .whyUs__content {
+    padding-bottom: 60px;
+  }
+  .why-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 768px;
+    padding: 30px;
+    margin: 0 auto;
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    h3,
+    p {
+      margin-bottom: 30px;
+      margin-top: 0;
+      /* max-width: 768px; */
+    }
+    span {
+      display: inline-block;
+      background: color-mix(in srgb, var(--contrast-color), transparent 85%);
+      padding: 8px 40px 10px 40px;
+      border-radius: 50px;
+      svg {
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  .benefit-box {
+    padding: 40px 30px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 768px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    .benefit-icon__wrapper {
+      padding: 20px;
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--accent-color), transparent 95%);
+      transition: all 0.2s ease-in;
+    }
+    h4 {
+      color: hsl(180, 1%, 15%);
+      margin-bottom: 40px;
+    }
+    p {
+      color: color-mix(in srgb, var(--default-color), transparent 30%);
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  .feature-boxes {
+    .feature-box {
+      background-color: var(--surface-color);
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      transition: 0.3s;
+      border: 1px solid
+        color-mix(in srgb, var(--default-color), transparent 90%);
+      max-width: 90vw;
+      margin: 0 auto;
+      margin-top: 24px;
+
+      a {
+        margin-left: 8px;
+        font-weight: 700;
+        color: var(--default-color);
+      }
+    }
+  }
+}
+
+/* for tab screens */
+@media (width >= 768px) {
+  .feature-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .feature-box {
+      flex: 0 0 30vw;
+    }
+  }
+}
+
+/* for desktop screens */
+@media (width >= 1024px) {
+  .why-box__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 1024px;
+    margin: 0 auto;
+    .why-box {
+      height: 400px;
+      /* width: auto; */
+      align-self: center;
+    }
+    .whyUs__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .benefit-box {
+        width: auto;
+        min-height: 350px;
+      }
+    }
   }
 }

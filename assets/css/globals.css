@@ -297,3 +297,64 @@
     }
   }
 }
+
+@layer icon_styles {
+  /* 1. Eye Icon (Lorem Ipsum) */
+  .feature-box:nth-child(1) svg path {
+    stroke: #ffc449;
+  }
+
+  /* 2. Infinity Icon (Dolor Sitema) */
+  .feature-box:nth-child(2) svg path {
+    fill: #5779ff;
+  }
+
+  /* 3. Graduation Cap Icon (Sed perspiciatis) */
+  .feature-box:nth-child(3) svg {
+    fill: #e80368;
+  }
+
+  /* 4. Diamond/Hexagon Icon (Magni Dolores) */
+  .feature-box:nth-child(4) svg {
+    fill: #ea89ff;
+  }
+
+  /* 6. Star Icon (Eiusmod Tempor) */
+  .feature-box:nth-child(6) svg path {
+    stroke: #ffa972;
+  }
+
+  /* 7. Grid/Apps Icon (Midela Teren) */
+  .feature-box:nth-child(7) svg {
+    transform: rotate(45deg);
+    path {
+      stroke: #11dbcf;
+    }
+  }
+
+  /* 8. Video/Camera Icon (Pira Neve) */
+  .feature-box:nth-child(8) svg path {
+    stroke: #4233ff;
+  }
+
+  /* 9. Command/Loop Icon (Dirada Pack) */
+  .feature-box:nth-child(9) svg path {
+    stroke: #b2904f;
+  }
+
+  /* 10. Dribbble/Ball Icon (Moton Ideal) */
+  .feature-box:nth-child(10) svg {
+    fill: #b20969;
+  }
+
+  /* 11. Activity/Pulse Icon (Verdo Park) */
+  .feature-box:nth-child(11) svg path {
+    stroke: #ff5828;
+  }
+
+  /* 12. Brightness/Sun Icon (Flavor Nivelanda) */
+  .feature-box:nth-child(12) svg path {
+    stroke: #29cc61;
+  }
+}
+
