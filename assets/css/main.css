@@ -757,3 +757,67 @@
 /* ==================================================
                   trainers Section
 ================================================== */
+.section__trainers {
+  max-width: 1024px;
+  padding-block: 60px;
+  margin: 0 auto;
+}
+.trainer-box__wrapper {
+  padding-inline: 12px;
+}
+
+.trainer-box {
+  min-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.trainer-box img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+.trainer__content {
+  margin-top: 30px;
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+
+.trainer__content h4 {
+  color: var(--default-color);
+}
+
+.trainer__content span {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-style: italic;
+}
+
+.trainer__content p {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-style: italic;
+  line-height: 21px;
+}
+
+.trainer__svgs svg {
+  width: 32px;
+  height: auto;
+}
+
+@media (width >= 768px) {
+  .trainer-box__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .trainer-box {
+    flex: 0 1 20%;
+  }
+}
+
+/* ==================================================
+                  Footer
+================================================== */
