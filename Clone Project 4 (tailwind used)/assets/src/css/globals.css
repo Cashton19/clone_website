@@ -1,0 +1,218 @@
+@layer colors, fonts, typography, font-size_config, global_Styles;
+
+@layer colors {
+  :root {
+    --green400: hsl(72, 79%, 15%);
+    --green300: hsl(83, 79%, 32%);
+    --green200: hsl(75, 55%, 37%);
+    --green100: hsl(87, 96%, 80%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 36%);
+    --black: hsl(0, 0%, 0%);
+    --subhead: hsl(0, 0%, 80%);
+  }
+}
+
+@layer fonts {
+  /* manrope-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/manrope-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* manrope-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/assets/fonts/manrope-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* manrope-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/assets/fonts/manrope-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* manrope-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/manrope-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* manrope-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/assets/fonts/manrope-v20-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/ibm-plex-sans-v23-latin-regular.woff2")
+      format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-sans-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/assets/fonts/ibm-plex-sans-v23-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-sans-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/assets/fonts/ibm-plex-sans-v23-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/assets/fonts/ibm-plex-sans-v23-latin-700.woff") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+}
+
+@layer typography {
+  /* DEFAULT */
+  h1,
+  .heading1 {
+    line-height: 1.058;
+    font-size: 28px;
+    letter-spacing: -0.02em;
+  }
+  h2,
+  .heading2 {
+    font-size: 22px;
+    line-height: 1.09;
+    letter-spacing: -0.02em;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 1.09;
+    letter-spacing: -0.02em;
+  }
+  p {
+    line-height: 1.09;
+  }
+  .caption {
+    font-size: 11.01px;
+    line-height: 1.09;
+    letter-spacing: -0.02em;
+  }
+  .link {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  /* FOR TAB */
+  @media (min-width: 799px) {
+    h1,
+    .heading1 {
+      font-size: 36px;
+    }
+    h2,
+    .heading2 {
+      font-size: 28px;
+    }
+    .link {
+      font-size: 11.5px;
+      line-height: 1.15;
+    }
+  }
+
+  /* FOR DESKTOP */
+  @media (min-width: 1280px) {
+    h1,
+    .heading1 {
+      font-size: 42px;
+    }
+    h2,
+    .heading2 {
+      font-size: 32px;
+    }
+    .caption {
+      font-size: 10px;
+    }
+    .link {
+      font-size: 12px;
+    }
+  }
+}
+@layer font-size_config {
+  /* for Mobile phones(default) */
+  .logo__container {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: -0.02em;
+  }
+  .feature-card__numbers {
+    font-family: "Manrope", Courier, monospace;
+    font-size: 90px;
+    line-height: 1.037;
+    letter-spacing: -0.04em;
+  }
+
+  /* for Tabs */
+  @media (max-width: 768px) {
+  }
+  /* for desktop */
+  @media (max-width: 1280px) {
+  }
+}
+
+@layer global_Styles {
+  body {
+    font-family: "Manrope", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  a {
+    text-decoration: none;
+    color: var(--black);
+    transition: text-decoration 0.5s ease-in;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .getstarted-btn {
+    display: inline-block;
+    color: var(--black);
+    background-color: var(--green100);
+    border-radius: 2px;
+    transition: background-color 0.3s;
+  }
+  .getstarted-btn:hover {
+    background-color: var(--green300);
+  }
+  footer{
+    background-color: color-mix(in srgb, var(--subhead), transparent 75%);
+  }
+}

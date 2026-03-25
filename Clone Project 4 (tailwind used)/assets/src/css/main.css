@@ -1,0 +1,82 @@
+.side-bar {
+  background-color: var(--green400);
+}
+.data_logo {
+  width: 15.42px;
+  height: 17.42px;
+}
+.modules img {
+  width: 30px;
+  height: 30px;
+}
+.module__card {
+  background-color: var(--green300);
+  border-radius: 5px;
+}
+.contact-links li {
+  display: inline-block;
+}
+.contact-links li a {
+  color: var(--green100);
+  margin-right: 12.8px;
+}
+.feature-card {
+  padding-block: 60px;
+  padding-inline: 20px;
+  background-color: var(--green100);
+  border-radius: 10px;
+}
+.feature-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature-card__content > :first-child {
+  padding-bottom: 30px;
+}
+.feature-card__content > :last-child {
+  color: var(--green400);
+}
+.feature-card__content img {
+  max-width: 100px;
+}
+.feature-card__numbers {
+  color: var(--green400);
+}
+.benefit__card img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.benefit__card > :last-child {
+  color: var(--grey);
+  margin-bottom: 20px;
+  max-width: 350px;
+}
+.feature__card{
+  margin-bottom: 40px;
+  flex-grow: 1;
+}
+.feature__card  img{
+  margin-bottom: 15px;
+}
+.feature__card p{
+  text-align: center;
+}
+@media (min-width: 768px) {
+    .CTA__content > h3 {
+      font-size: 22px;
+      line-height: 1.09;
+      letter-spacing: -0.02em;
+    }
+  }
+  @media (min-width: 1024px) {
+    .CTA__content > h3 {
+      line-height: 1.058;
+      font-size: 32px;
+      letter-spacing: -0.02em;
+    }
+  }
+.footer__left-container >:first-child{
+width: 50px;
+}
